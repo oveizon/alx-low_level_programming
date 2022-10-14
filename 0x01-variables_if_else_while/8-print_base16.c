@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int num = 0;
+	int num = '0';
 	int hex = 'a';
 
-	while (num < 10)
+	while (num < '10')
 	{
 		putchar(num);
 		num++;
