@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - print numbers n to 98
+ * print_to_98 - printing numbers to 98,seprated by a column
  * @n: integer argument
  */
 void print_to_98(int n)
