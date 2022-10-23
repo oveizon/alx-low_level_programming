@@ -5,35 +5,25 @@
  */
 int main(void)
 {
-	int i, k = '0';
-	int j;
+	int x, y;
 
-	for (i = '0'; i <= '9'; i++)
+	for (x = 0; x < 10; x++)
 	{
-		for (j = k; j <= '9'; j++)
+		for (y = 0; y < 10; y++)
 		{
-			if (i != j)
+			if (y > x)
 			{
-				putchar(i);
-				putchar(j);
+				putchar(x + '0');
+				putchar(y + '0');
+				if (x != 8 || y != 9)
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
-			if (i == j)
-			{
-				continue;
-			}
-			if ((i == '8') && (j == '9'))
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			k++;
 		}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
 
