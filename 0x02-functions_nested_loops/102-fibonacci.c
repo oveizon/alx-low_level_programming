@@ -5,19 +5,21 @@
  */
 int main(void)
 {
-	int counter;
-	int countto = 50;
-	long a = 1;
-	long b = 2;
+	int i;
+	unsigned long f1 = 0, f2 = 1, s;
 
-	for (counter = 1; counter <= (countto / 2); counter++)
+	for (i = 0; i < 50; i++)
 	{
-		printf("%li %li ", a, b);
-		a += b;
-		b += a;
+		s = f1 + f2;
+		printf("lu%", s);
+
+		f1 = f2;
+		f2 = s;
+
+		if (i == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	if (countto % 2 == 1)
-		printf("%li", a);
-	printf("\n");
 	return (0);
 }
