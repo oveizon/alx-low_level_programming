@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * string_toupper - fonction toupper
+ * *string_toupper - fonction toupper
  * @a: array
- * @n: number of elements in array
+ * Return: a variable
  */
 char *string_toupper(char *a)
 {
