@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * wildcmp - check the code for Holberton School students.
+ * wildcmp - check the code for School students.
  * @s1 : parameter
  * @s2 : parameter
  * Return: return
